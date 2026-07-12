@@ -1,5 +1,11 @@
 # ComfyUI-ModelDumpster
 
+> [!NOTE]
+> **本リポジトリは実験的なノードの集まりです。** あまり実用的ではないかもしれません。
+> このリポジトリを利用して、自由にどんどん実験・検証を行ってください！
+> 
+> *This repository is a collection of experimental nodes and might not be highly practical. Please feel free to use it for your own experiments and research!*
+
 **SDXLモデルの解析ノード寄せ集め。** 「2つのモデルはどこが違うか」「この絵はモデルのどこが作ってるか」を
 ヒートマップで見る道具。マージ本体の [ComfyUI-RecipeMerge](https://github.com/galigali-san/ComfyUI-RecipeMerge) と地続きで、
 差分から自動でマージレシピを吐ける。
