@@ -20,6 +20,7 @@ import comfy.samplers
 from .model_keys import block_label, classify_element, MATRIX_ELEMENTS
 from .diff_aggregate import (aggregate_diffs, build_diff_report,
                              recipe_from_diff, BLOCKS_ORDER)
+from .latent_swap import EmptyLatentImageSwap
 
 
 def _unet_state_dict(model):
@@ -313,10 +314,12 @@ NODE_CLASS_MAPPINGS = {
     "ModelDiffViewer": ModelDiffViewer,
     "DiffToRecipe": DiffToRecipe,
     "ModelAblationAnalyzer": ModelAblationAnalyzer,
+    "EmptyLatentImageSwap": EmptyLatentImageSwap,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ModelDiffViewer": "Model Diff Viewer (Heatmap)",
     "DiffToRecipe": "Diff → Recipe (auto-merge)",
     "ModelAblationAnalyzer": "Model Ablation Analyzer (Heatmap)",
+    "EmptyLatentImageSwap": "Empty Latent Image (Swap)",
 }
