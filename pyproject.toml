@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-modeldumpster"
+description = "Model analysis nodes for ComfyUI (SDXL): a block x element diff heatmap between two models, an auto-merge recipe generator from that diff, and a block ablation analyzer that measures which blocks actually drive a given image. Pairs with ComfyUI-RecipeMerge for diff-driven merging."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/galigali-san/ComfyUI-ModelDumpster"
+
+[tool.comfy]
+PublisherId = "galigali"
+DisplayName = "ComfyUI-ModelDumpster"
+Icon = ""
