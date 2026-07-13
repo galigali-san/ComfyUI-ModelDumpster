@@ -21,6 +21,7 @@ from .model_keys import block_label, classify_element, MATRIX_ELEMENTS
 from .diff_aggregate import (aggregate_diffs, build_diff_report,
                              recipe_from_diff, BLOCKS_ORDER)
 from .latent_swap import EmptyLatentImageSwap
+from .calculator import Calculator
 
 
 def _unet_state_dict(model):
@@ -315,6 +316,7 @@ NODE_CLASS_MAPPINGS = {
     "DiffToRecipe": DiffToRecipe,
     "ModelAblationAnalyzer": ModelAblationAnalyzer,
     "EmptyLatentImageSwap": EmptyLatentImageSwap,
+    "Calculator": Calculator,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -322,4 +324,5 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "DiffToRecipe": "Diff → Recipe (auto-merge)",
     "ModelAblationAnalyzer": "Model Ablation Analyzer (Heatmap)",
     "EmptyLatentImageSwap": "Empty Latent Image (Swap)",
+    "Calculator": "Calculator (電卓)",
 }
